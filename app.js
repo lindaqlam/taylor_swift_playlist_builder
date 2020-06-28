@@ -34,6 +34,6 @@ app.post('/playlist', function(req, res) {
 	res.render('playlist', { allSongs: allSongs });
 });
 
-app.listen(3000, process.env.IP, function() {
+app.listen(process.env.PORT || 3000, process.env.IP, function() {
 	console.log('Server is running!');
 });

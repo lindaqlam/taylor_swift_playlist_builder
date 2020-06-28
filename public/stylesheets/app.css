@@ -27,3 +27,7 @@ p {
 p:nth-of-type(odd) {
 	background-color: #a8dadc;
 }
+
+.songList {
+	margin-bottom: 10%;
+}

@@ -68,7 +68,7 @@ var moodsMap = new Map([
 		'vulnerability',
 		[ 'Cornelia Street', 'Death By A Thousand Cuts', 'Haunted', 'Clean', 'All Too Well', 'White Horse' ]
 	],
-	[ 'staring-over', [ 'Begin Again', 'Welcome To New York', 'Daylight' ] ],
+	[ 'starting-over', [ 'Begin Again', 'Welcome To New York', 'Daylight' ] ],
 	[
 		'narrative-arcs',
 		[
