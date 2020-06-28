@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var expressSanitizer = require('express-sanitizer');
 
 var moodsMap = require('./views/moods.js');
+var gifs = require('./views/gifs.js');
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -31,7 +32,10 @@ app.post('/playlist', function(req, res) {
 
 	var allSongs = Array.from(songsSet);
 
-	res.render('playlist', { allSongs: allSongs });
+	var gifIndex = Math.floor(Math.random() * gifs.gifs.length);
+	var gifLink = gifs.gifs[gifIndex];
+
+	res.render('playlist', { allSongs: allSongs, gifLink: gifLink });
 });
 
 app.listen(process.env.PORT || 3000, process.env.IP, function() {
