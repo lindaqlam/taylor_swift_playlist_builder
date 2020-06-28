@@ -1,0 +1,14 @@
+<%- include("partials/header") %>
+
+<div class="container">
+    <h1>your playlist</h1>
+
+    <div class="songsList">
+        <% allSongs.forEach(function(song){ %>
+            <p><%= song %></p>
+        <% }) %>
+    </div>
+
+</div>
+
+<%- include("partials/footer") %>

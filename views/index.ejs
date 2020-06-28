@@ -1,0 +1,151 @@
+<%- include("partials/header") %>
+
+<div class="container">
+  <h1>Taylor Swift Playlist Builder</h1>
+
+  <div>
+    <h2>What do you want to hear about?</h2>
+  </div>
+
+  <div id="moods">
+    <form action="/playlist" method="POST">
+      <div class="btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="friendship" id="friendship"> friendship
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="they-messed-up" id="they-messed-up"> they messed up
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="saying-goodbye" id="saying-goodbye"> saying goodbye
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="they-should-pick-me" id="they-should-pick-me"> bad breakup
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="ldr" id="ldr"> LDR
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="toxic-relationship" id="toxic-relationship"> toxic relationship
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="healing" id="healing"> healing
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="how-to-fix-this-relationship" id="how-to-fix-this-relationship"> how to fix this
+          relationship
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="itll-end-but-til-end" id="itll-end-but-til-end"> it'll end but 'til then
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="tumultuous-relationship" id="tumultuous-relationship"> tumultuous relationship
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="secret-relationship" id="secret-relationship"> secret relationship
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="apologies" id="apologies"> apologies
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="vulnerability" id="vulnerability"> vulnerability
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="staring-over" id="staring-over"> staring over
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="narrative-arcs" id="narrative-arcs"> narrative arcs
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="happy-relationship" id="happy-relationship"> happily in a relationship
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="infatuation" id="infatuation"> infatuation
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="burning-down-the-patriarchy" id="burning-down-the-patriarchy">
+          burning-down-the-patriarchy
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="feeling-good" id="feeling-good"> feeling good
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="mature-romance" id="mature-romance"> mature romance
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="the-start-of-something-good" id="the-start-of-something-good"> the start of
+          something good
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="growing-up" id="growing-up"> growing up
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="over-the-breakup" id="over-the-breakup"> getting over the breakup
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="friend-breakups" id="friend-breakups"> friend breakups
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="nostagia-of-past-love" id="nostagia-of-past-love"> nostagia of past love
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="family" id="family"> family
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="breakups" id="breakups"> breakups
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="songs-for-crying" id="songs-for-crying"> songs for crying
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="they-like-someone-else" id="they-like-someone-else"> they like someone else
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="vengeance" id="vengeance"> vengeance
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="for-dancing" id="for-dancing"> for dancing
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="crushing-hard" id="crushing-hard"> crushing hard
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="relationship-problems" id="relationship-problems"> relationship problems
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="slow-bops" id="slow-bops"> slow bops
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="heartbroken" id="heartbroken"> heartbroken
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="angry-energy" id="angry-energy"> angry energy
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="to-sing-with-friends" id="to-sing-with-friends"> to sing with friends
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="unfaithful-partner" id="unfaithful-partner"> unfaithful partner
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="pop-bops" id="pop-bops"> pop-bops
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="rebound" id="rebound"> rebound
+        </label>
+        <label class="btn btn-outline-info">
+          <input type="checkbox" name="being-in-love" id="being-in-love"> being in love
+        </label>
+      </div>
+
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+
+
+
+
+
+</div>
+
+<%- include("partials/footer") %>

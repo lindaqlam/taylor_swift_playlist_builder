@@ -1,0 +1,29 @@
+h1 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 400;
+	font-size: 4em;
+	margin-bottom: 5%;
+}
+
+p,
+h2 {
+	font-family: 'Lato', sans-serif;
+}
+
+.btn {
+	margin-top: 5px;
+}
+
+label {
+	margin: 5px 5px 0 0;
+}
+
+p {
+	margin-bottom: 0px;
+}
+
+p:nth-of-type(odd) {
+	background-color: #a8dadc;
+}
