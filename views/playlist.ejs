@@ -1,9 +1,12 @@
 <%- include("partials/header") %>
+<!-- 
+    <div id="gifSpace">
+        <iframe src="https://giphy.com/embed/Y3kK1IGPHIt8fuUGCq" width="480" height="267" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div> -->
 
-<div class="container">
-    <h1>your playlist</h1>
+    <h2 class="playlist">YOUR PLAYLIST</h2>
 
-    <div class="songsList">
+    <div id="songsList">
         <% allSongs.forEach(function(song){ %>
             <p><%= song %></p>
         <% }) %>

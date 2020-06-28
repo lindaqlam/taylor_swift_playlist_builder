@@ -1,15 +1,36 @@
+.container {
+	max-width: 60%;
+	margin-top: 20px;
+	position: relative;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	display: grid;
+	grid-template-rows: 1fr auto;
+}
+
 h1 {
+	text-align: center;
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
-	text-align: center;
 	font-weight: 400;
 	font-size: 4em;
 	margin-bottom: 5%;
+	margin-top: 30px;
 }
 
 p,
 h2 {
 	font-family: 'Lato', sans-serif;
+}
+
+.playlist {
+	text-align: center;
 }
 
 .btn {
@@ -22,12 +43,51 @@ label {
 
 p {
 	margin-bottom: 0px;
+	text-align: center;
 }
 
 p:nth-of-type(odd) {
 	background-color: #a8dadc;
 }
 
-.songList {
-	margin-bottom: 10%;
+#moods {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#songsList {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+}
+
+.footer {
+	text-align: center;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+a {
+	color: teal;
+}
+
+.title {
+	color: black;
+}
+
+.title:hover {
+	color: black;
+	text-decoration: none;
+}
+
+@media (max-width: 767.98px) {
+	.container {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	h1 {
+		font-size: 400px;
+	}
 }

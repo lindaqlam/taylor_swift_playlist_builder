@@ -184,7 +184,7 @@ var moodsMap = new Map([
 	[ 'songs-for-crying', [ 'All Too Well', 'Last Kiss', 'Back To December', 'Dear John', 'Sad Beautiful Tragic' ] ],
 	[ 'they-like-someone-else', [ 'Teardrops On My Guitar', 'You Belong With Me', 'Speak Now', 'Invisible' ] ],
 	[
-		'vengeance',
+		'vengefulness',
 		[
 			'Picture To Burn',
 			'Better Than Revenge',
